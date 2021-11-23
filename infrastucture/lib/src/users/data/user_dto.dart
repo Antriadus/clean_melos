@@ -7,9 +7,10 @@ part 'user_dto.g.dart';
 class UserDto {
   final int id;
   final String name;
-  final LatLng home;
+  final double lat;
+  final double lng;
 
-  UserDto(this.id, this.name, this.home);
+  UserDto(this.id, this.name, this.lat, this.lng);
 
   factory UserDto.fromJson(Map<String, dynamic> json) => _$UserDtoFromJson(json);
 }
