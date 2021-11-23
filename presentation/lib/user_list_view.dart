@@ -9,6 +9,7 @@ class UserListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      itemCount: users.length,
       itemBuilder: (ctx, i) => UserAvatar(user: users[i]),
     );
   }
