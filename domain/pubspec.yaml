@@ -10,6 +10,11 @@ dependencies:
   fimber: ^0.6.4
   latlng: ^0.1.0
 
+dev_dependencies:
+  linting:  
+    path: ../linting
+
+
 
 # dependencies:
 
