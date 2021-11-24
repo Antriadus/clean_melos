@@ -10,13 +10,14 @@ environment:
 
 dependencies:
   # path: ^1.8.0
-  json_annotation: ^4.3.0
+  injectable: ^1.5.0
   domain:
     path: ../domain
-  common_dependencies:
-    path: ../common_dependencies
+  json_annotation: ^4.3.0
+  latlng: ^0.1.0
+  get_it: ^7.2.0
 
 dev_dependencies:
   build_runner: ^2.1.5
+  injectable_generator: ^1.5.2
   json_serializable: ^6.0.1
-  lints: ^1.0.0

@@ -1,4 +1,3 @@
-import 'package:common_dependencies/latlng.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'user_dto.g.dart';

@@ -4,7 +4,9 @@ import 'package:domain/users/repo/users_repo.dart';
 import 'package:infrastucture/src/users/data/user_dto.dart';
 import 'package:infrastucture/src/users/mappers/user_from_dto_mapper.dart';
 import 'package:infrastucture/src/users/mappers/user_to_dto_mapper.dart';
+import 'package:injectable/injectable.dart';
 
+@Injectable(as: UsersRepo)
 class InMemeoryUsersRepo implements UsersRepo {
   final UserFromDtoMapper _userFromDtoMapper;
   final UserToDtoMapper _userToDtoMapper;

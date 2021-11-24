@@ -1,4 +1,4 @@
-import 'package:common_dependencies/latlng.dart';
+import 'package:latlng/latlng.dart';
 
 class User {
   final int id;

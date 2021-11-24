@@ -1,9 +1,17 @@
-import 'package:common_dependencies/latlng.dart';
 import 'package:domain/users/data/user.dart';
+import 'package:domain/users/repo/users_repo.dart';
+import 'package:fimber/fimber.dart';
 import 'package:flutter/material.dart';
+import 'package:infrastucture/injector.dart';
+import 'package:latlng/latlng.dart';
 import 'package:presentation/user_list_view.dart';
 
 void main() {
+  configureDependencies();
+  final repo = getIt.get<UsersRepo>();
+  Fimber.plantTree(DebugTree.elapsed());
+  print(repo);
+
   runApp(const MyApp());
 }
 
@@ -13,6 +21,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    Fimber.i("MyApp");
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
