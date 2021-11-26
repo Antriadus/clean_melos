@@ -1,16 +1,7 @@
-include: package:lint/analysis_options.yaml
-linter:
-  rules:
-    always_put_required_named_parameters_first: false
-    prefer_single_quotes: true
-    trailing_commas: true
-    constant_identifier_names: false
-    lines_longer_than_80_chars: false
-    avoid_positional_boolean_parameters: false
-    avoid_classes_with_only_static_members: false
-    use_setters_to_change_properties: false
-    unawaited_futures: true
-    unused_element: false
+include: package:pedantic/analysis_options.1.9.0.yaml
+
 analyzer:
+  errors:
+    unused_element: error
   exclude:
-    - assets/**/*.*
+    - "domain/lib/users/data/add_user_data.dart"

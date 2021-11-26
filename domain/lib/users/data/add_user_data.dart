@@ -6,3 +6,5 @@ class AddUserData {
 
   AddUserData(this.name, this.home);
 }
+
+Map<String, dynamic> _nieuzyta() => <String, dynamic>{};
