@@ -4,7 +4,7 @@ import 'package:fimber/fimber.dart';
 import 'package:flutter/material.dart';
 import 'package:infrastucture/injector.dart';
 import 'package:latlng/latlng.dart';
-import 'package:presentation/user_list_view.dart';
+import 'package:presentation/widgets/user_avatar.dart';
 
 void main() {
   configureDependencies();
@@ -62,7 +62,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    SizedBox();
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
     //
@@ -75,8 +74,8 @@ class _MyHomePageState extends State<MyHomePage> {
           // the App.build method, and use it to set our appbar title.
           title: Text(widget.title),
         ),
-        body: UserListView(
-          users: [User(1, "TEST", LatLng(1.1, 2.2))],
+        body: UserAvatar(
+          user: User(1, "TEST", LatLng(1.1, 2.2)),
         ));
   }
 }
