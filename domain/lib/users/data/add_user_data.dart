@@ -7,4 +7,4 @@ class AddUserData {
   AddUserData(this.name, this.home);
 }
 
-Map<String, dynamic> _nieuzyta() => <String, dynamic>{};
+Map<String, dynamic> _noUsedDomainFunction() => <String, dynamic>{};

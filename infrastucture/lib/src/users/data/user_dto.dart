@@ -13,3 +13,5 @@ class UserDto {
 
   factory UserDto.fromJson(Map<String, dynamic> json) => _$UserDtoFromJson(json);
 }
+
+void _noUsedInfraMethod() => '';
